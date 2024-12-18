@@ -39,6 +39,6 @@ For this, we simply use PDQ Connects 'File copy step' to download the Windows 11
 8. Monitors the W11 upgrade process every 60 seconds, specifically looking for the 'setup', 'SetupHost', and 'SetupPrep' processes to be completed.
 ![Monitoring Process](assets/monitoring.png)
 9. After all three of those processes have finished, it unmounts the ISO and deletes the ISO file.
-10. Initiates a delayed reboot (5 minute countdown) of the system with a full-screen messagae saying: "The Windows 11 installation process is now complete. This system will reboot in five minutes to finish the upgrade. Please save your work."
+10. Initiates a delayed reboot (5 minute countdown) of the system with a full-screen message saying: "The Windows 11 installation process is now complete. This system will reboot in five minutes to finish the upgrade. Please save your work."
 11. Confirmation script completed successfully with date/time.
 ![Cleanup and Reboot](assets/cleanup_and_reboot.png)
