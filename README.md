@@ -19,12 +19,12 @@ This repository demonstrates a workflow to in-place upgrade a computer running W
 4. Defines an adjustable minimum space requirement (we use 35GB).
 5. Throws an error if the minimum space requirement isn't met.
 <br>
-<br>
+
 **File Transfer**
 
 For this, we simply use PDQ Connects 'File copy step' to download the Windows 11 ISO (Windows.iso) to C:\Temp
 <br>
-<br>
+
 **W11_upgrade.ps1**
 
 1. Defines path to where the ISO was copied.
