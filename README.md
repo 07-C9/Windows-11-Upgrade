@@ -15,12 +15,15 @@ This repository demonstrates a workflow to in-place upgrade a computer running W
 1. Identifies the boot (primary) drive.
 2. Calculates Free, used and Total space in GB.
 3. Outputs this information to a table with Write-Output.
+![Storage Table Screenshot](assets/storage_table.png)
 4. Defines an adjustable minimum space requirement (we use 35GB).
 5. Throws an error if the minimum space requirement isn't met.
+
 
 **File Transfer**
 
 For this, we simply use PDQ Connects 'File copy step' to download the Windows 11 ISO (Windows.iso) to C:\Temp
+
 
 **W11_upgrade.ps1**
 
@@ -31,7 +34,10 @@ For this, we simply use PDQ Connects 'File copy step' to download the Windows 11
 5. Verifies the path exists.
 6. Defines parameters for setup.exe (can be customized). We have it set to not automatically reboot.
 7. Starts the W11 upgrade process.
+![Setup Process](assets/setup.png)
 8. Monitors the W11 upgrade process every 60 seconds, specifically looking for the 'setup', 'SetupHost', and 'SetupPrep' processes to be completed.
+![Monitoring Process](assets/monitoring.png)
 9. After all three of those processes have finished, it unmounts the ISO and deletes the ISO file.
 10. Initiates a delayed reboot (5 minute countdown) of the system with a full-screen messagae saying: "The Windows 11 installation process is now complete. This system will reboot in five minutes to finish the upgrade. Please save your work."
 11. Confirmation script completed successfully with date/time.
+![Cleanup and Reboot](assets/cleanup_and_reboot.png)
