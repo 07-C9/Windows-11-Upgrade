@@ -1,6 +1,6 @@
 # Windows 11 Upgrade as SYSTEM
 
-This repository demonstrates a workflow to in-place upgrade a computer running Windows 10, to Windows 11, while executing as SYSTEM. Used with PDQ Connect but applicable to other management / RMM tools.
+This repository demonstrates a workflow to in-place upgrade a computer running Windows 10 to Windows 11, while executing as SYSTEM. Used with PDQ Connect but potentially applicable to other management / RMM tools.
 
 ## Description
 
