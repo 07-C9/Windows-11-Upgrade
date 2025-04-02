@@ -31,7 +31,7 @@ C     124.02       113.93       237.96
 
 **File Transfer**
 
-Use PDQ Connect's **File Copy Step** to download the Windows 11 ISO (`Windows.iso`) to `C:\Temp`.
+We use PDQ Connect's **File Copy Step** to download the Windows 11 ISO (`Windows.iso`) to `C:\Temp`.
 
 ---
 
